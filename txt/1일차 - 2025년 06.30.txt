@@ -1,0 +1,80 @@
+Node 설치이후 확인 (v22.17.0 LTS) 
+node -v
+npm -v
+npx -v 
+yarn -version
+
+yarn 설치 : npm available! 10.9.2 -> 11.4.2 로 업그레이드 
+npm install --global yarn
+npm install -g npm@11.4.2
+npm install --global yarn
+
+==================================================================
+리엑트 프로잭트 만들기 1 (기본): 		<== 최신 버젼(리엑트 19)의 리엑트 프로잭트 생성 (느림)  
+  npx create-react-app my-app1              // my-app1 이라는 리엑트 프로잭트를 자동으로 생성 
+  cd my-app1
+  npm start 				// 리엑트 프로잭트 실행 
+	//  http://localhost:3000       작동 
+
+
+리엑트 프로잭트 만들기 2 : 	<== yarn 을 사용해서 리엑트 프로잭트 만들기 
+  yarn create react-app my-app2 		<== 오류 발생 
+
+리엑트 프로잭트 만들기 3 ( vite ) :  <== vite 를 사용해서 리엑트 프로잭트 만들기 (빠름) 
+  npm create vite@latest my-app3 
+		Select a framework: > React
+		Select a variant: > JavaScript                            ((컴포넌트 확장자를 js, jsx 로 구성) 
+  cd my-app3
+  npm install					//라이브러리 설치 
+  npm run dev                              // 리엑트 프로잭트 실행 
+	// http://localhost:5173/	     사용하지 않는 랜덤 포트를 만들어서 실행 
+
+
+<실습> 
+ my-app-test1		<== 첫번째 (  npx create-react-app ) 
+ my-app-test2		<== vite 사용해서 프로잭트 만들기 ( npm create vite@latest )
+
+====================================================
+초기 설정 프로잭트 생성 
+   - 00_init-proj1-default
+	npx create-react-app 00_init-proj1-default
+	cd 00_init-proj1-default
+  	npm start
+		http://localhost:3000/
+	
+   - 00_init-proj2-vite
+  	npm create vite@latest 00_init-proj2-vite
+		Select a framework:   React
+		Select a variant:  JavaScript
+  	cd 00_init-proj2-vite
+  	npm install
+  	npm run dev
+		http://localhost:5173/
+
+===================================================
+실습 : 프로잭트 생성후 개발준비를 위한 초기 셋팅 구성 
+  -- init-proj1-default-test1
+  -- init-proj2-vite-test2 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
